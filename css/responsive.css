@@ -1,0 +1,72 @@
+/* ============================================
+   Responsive - Mobile/Tablet adaptations
+   ============================================ */
+
+/* Tablet & below */
+@media (max-width: 1024px) {
+  .gnb__menu { gap: 12px; }
+  .gnb__menu-link { font-size: var(--font-size-sm); }
+  .gnb__top-link { display: none; }
+  .gnb__search { max-width: 280px; }
+}
+
+/* Small tablet */
+@media (max-width: 840px) {
+  .gnb__top { display: none; }
+  .gnb { height: var(--layout-subgnb-height); }
+  :root { --layout-gnb-height: 60px; }
+  .gnb__main { gap: 12px; padding: 0 16px; }
+  .gnb__dropdown, .gnb__tag { display: none; }
+  .gnb__menu { display: none; }
+
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: var(--layout-gnb-height);
+    bottom: 0;
+    z-index: 50;
+    transform: translateX(-100%);
+    transition: transform var(--transition-base);
+  }
+  .sidebar.is-open { transform: translateX(0); }
+
+  .app__body { flex-direction: column; }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .gnb__search { max-width: none; flex: 1; }
+  .gnb__main > :not(.gnb__logo):not(.gnb__search):not(.gnb__actions) { display: none; }
+  .gnb__actions .gnb__btn-primary { display: none; }
+
+  /* Pages */
+  .page-content { padding: 16px \!important; }
+
+  /* S1 */
+  .inbox__header { padding: 0 \!important; }
+  .inbox__item { flex-wrap: wrap; }
+  .inbox__item-meta { width: 100%; justify-content: flex-end; margin-top: 8px; }
+
+  /* S2/S5 */
+  .detail { padding: 16px \!important; }
+  .detail-card { margin: 0 \!important; }
+  .cta-bar { flex-direction: column; align-items: stretch \!important; gap: 16px; }
+
+  /* S3/S4 Editor - becomes single column */
+  .editor { flex-direction: column \!important; height: auto \!important; }
+  .editor__req-panel { width: 100% \!important; height: auto \!important; }
+  .editor__file-tree { display: none; }
+  .editor__main { min-height: 400px; }
+
+  /* S4 chat */
+  .aside-chat {
+    position: fixed \!important;
+    inset: 0;
+    width: 100% \!important;
+  }
+
+  /* S6 portfolio */
+  .portfolio__stat-row { grid-template-columns: 1fr \!important; }
+  .portfolio__strengths-row { grid-template-columns: 1fr \!important; }
+  .portfolio__progress-row { grid-template-columns: 1fr \!important; }
+}

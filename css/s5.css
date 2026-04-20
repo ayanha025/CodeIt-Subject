@@ -1,0 +1,89 @@
+/* ============================================
+   S5 - Task Complete (업무 완료) feedback view
+   ============================================ */
+
+.complete-card__status-tag {
+  padding: 6px 12px;
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  align-self: center;
+}
+
+.feedback {
+  padding: 0 0 24px;
+}
+.feedback + .feedback { padding-top: 24px; border-top: 1px solid var(--color-border-subtle); }
+
+.feedback__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.feedback__tag {
+  padding: 4px 12px;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+.feedback__tag--good { background: #D8F5E6; color: #12B76A; }
+.feedback__tag--fix { background: #FFF3D6; color: #C47B00; }
+
+.feedback__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.feedback__toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.feedback__desc {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
+  margin: 8px 0 0;
+  padding-left: 16px;
+  border-left: 2px solid var(--color-border-default);
+}
+
+.final-cta {
+  margin-top: 32px;
+  text-align: center;
+}
+.final-cta__hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+  margin-bottom: 16px;
+}
+.final-cta__btn {
+  min-width: 215px;
+  height: 48px;
+  padding: 0 32px;
+  border-radius: var(--radius-md);
+  background: var(--color-brand-primary);
+  color: #fff;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+.final-cta__btn:hover { background: var(--color-brand-primary-hover); }

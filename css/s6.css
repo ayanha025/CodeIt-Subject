@@ -1,0 +1,141 @@
+/* ============================================
+   S6 - Portfolio (포트폴리오)
+   ============================================ */
+.portfolio {
+  padding: 32px 40px;
+  width: 100%;
+}
+.portfolio__title {
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0 0 32px;
+}
+
+.portfolio__stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.stat-card {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+}
+.stat-card__value-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.stat-card__value {
+  font-size: 32px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  line-height: 1.1;
+}
+.stat-card__unit {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+}
+.stat-card__label {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  margin: 8px 0 10px;
+}
+.stat-card__trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-sm);
+  color: var(--color-brand-primary);
+  font-weight: var(--font-weight-semibold);
+}
+.stat-card__trend--up { color: var(--color-brand-primary); }
+.stat-card__trend--down { color: var(--color-brand-primary); }
+
+.portfolio__strengths-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.insight-card {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+}
+.insight-card--strength { background: var(--color-brand-primary-bg); border-color: var(--color-brand-primary-light); }
+.insight-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 12px;
+}
+.insight-card--strength .insight-card__title { color: var(--color-brand-primary); }
+.insight-card__list {
+  padding-left: 16px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: var(--font-size-md);
+  color: var(--color-text-primary);
+  line-height: var(--line-height-relaxed);
+}
+.insight-card__list li { list-style: disc; }
+
+.portfolio__progress-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.progress-card {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+}
+.progress-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.progress-card__label {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+.progress-card__value {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brand-primary);
+}
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: var(--color-background-tertiary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.progress-bar__fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6F40EE 0%, #9C6FFF 100%);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-base);
+}
+.progress-card__desc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+/* S6 페이지에서 사이드바 뱃지(업무 채널 옆 2) 배경을 회색으로 */
+.sidebar__badge { background: var(--color-text-tertiary); }

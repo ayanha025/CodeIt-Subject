@@ -1,0 +1,110 @@
+/* ============================================
+   S1 - Inbox (업무 채널)
+   ============================================ */
+.inbox {
+  padding: 32px 40px;
+  width: 100%;
+}
+
+.inbox__header {
+  padding-bottom: 16px;
+}
+.inbox__title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.inbox__title {
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+.inbox__count {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+  background: var(--color-background-tertiary);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.inbox__tabs {
+  margin-bottom: 24px;
+}
+.inbox__chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.inbox__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inbox__item {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  display: flex;
+  gap: 16px;
+  transition: all var(--transition-fast);
+}
+.inbox__item:hover {
+  border-color: var(--color-brand-primary-light);
+  box-shadow: var(--shadow-md);
+}
+
+.inbox__item-body {
+  flex: 1;
+  min-width: 0;
+}
+.inbox__item-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.inbox__item-sender {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-md);
+}
+.inbox__item-time {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+}
+.inbox__item-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0 0 6px;
+}
+.inbox__item-desc {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.inbox__item-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.inbox__item-time-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+}
+.inbox__item-time-chip .icon { width: 14px; height: 14px; }

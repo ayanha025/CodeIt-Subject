@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S2 - 업무 상세 | TEOS</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/s2.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="app">
+    <header class="gnb">
+      <div class="gnb__top">
+        <a href="index.html" class="gnb__logo">codeit</a>
+        <a href="#" class="gnb__top-link">고객센터</a>
+        <a href="#" class="gnb__top-link">팀 요금제</a>
+        <a href="#" class="gnb__top-link">로그인</a>
+      </div>
+      <div class="gnb__main">
+        <button class="gnb__dropdown">모든 강의 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <span class="gnb__tag">국비</span>
+        <span class="gnb__tag-label">단기 완성</span>
+        <div class="gnb__search">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon gnb__search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" class="gnb__search-input" placeholder="어떤 강의를 찾고 있나요?">
+        </div>
+        <nav class="gnb__menu">
+          <a href="#" class="gnb__menu-link">커뮤니티</a>
+          <a href="#" class="gnb__menu-link">수강 후기</a>
+          <a href="#" class="gnb__menu-link">챌린지</a>
+        </nav>
+        <div class="gnb__actions">
+          <button class="gnb__btn-primary">멤버십 안내</button>
+          <button class="gnb__icon-btn" aria-label="알림">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a2 2 0 0 0 3.4 0"/></svg>
+          </button>
+          <div class="gnb__avatar">H</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="app__body">
+      <aside class="sidebar">
+        <a href="#" class="sidebar__item"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1.5 1.5 0 0 1-1.5 1.5h-4V14h-7v7.5h-4A1.5 1.5 0 0 1 3 20z"/></svg>홈</a>
+        <a href="#" class="sidebar__item"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20v3H6.5A2.5 2.5 0 0 1 4 18.5"/></svg>내 수업</a>
+        <a href="#" class="sidebar__item"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>재생 목록</a>
+        <a href="s1-inbox.html" class="sidebar__item sidebar__item--active">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l.9-5.4A8 8 0 1 1 21 12Z"/></svg>업무 채널
+          <span class="sidebar__badge">2</span>
+        </a>
+        <a href="s6-portfolio.html" class="sidebar__item"><svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6"/></svg>포트폴리오</a>
+      </aside>
+
+      <main class="app__main">
+        <div class="detail">
+          <a href="s1-inbox.html" class="detail__back">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            업무함으로
+          </a>
+
+          <article class="detail-card">
+            <header class="detail-card__header">
+              <div class="avatar avatar--blue avatar--lg">김</div>
+              <div class="detail-card__header-text">
+                <h2 class="detail-card__sender">김지훈 팀장</h2>
+                <div class="detail-card__meta">오늘 오전 10:22</div>
+              </div>
+            </header>
+
+            <div class="detail-card__body">
+              <p class="detail-card__text">안녕하세요. 이번 스프린트에서 로그인 페이지 UI를 담당해주세요.
+
+디자인 시스템 컬러 토큰 반드시 적용 부탁드려요.
+컴포넌트 네이밍 컨벤션도 기존 시스템 기준으로 맞춰주시고,
+버튼 상태(default / hover / disabled / active)도 모두 명세에 포함해주세요.
+
+세부 조건은 별도로 전달하지 않을테니 디자인 판단 기준으로 작성해 주시면 됩니다.</p>
+              <div class="detail-card__attach">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m21 12-8.5 8.5a5.5 5.5 0 1 1-7.8-7.8l8.5-8.5a3.7 3.7 0 0 1 5.2 5.2l-8.5 8.5a1.9 1.9 0 0 1-2.6-2.6l7.8-7.8"/></svg>
+                디자인시스템_v3.2.fig
+              </div>
+            </div>
+
+            <div class="detail-card__cta">
+              <div class="cta-bar">
+                <div class="cta-bar__info">
+                  <span class="cta-bar__time">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg>
+                    30분 제안
+                  </span>
+                  <span class="cta-bar__hint">작업 시작 후 타이머가 작동합니다</span>
+                </div>
+                <div class="cta-bar__actions">
+                  <a href="s4-ai-chat.html" class="btn btn--secondary btn--pill">AI에게 질문하기</a>
+                  <a href="s3-editor.html" class="btn btn--primary btn--pill">작업 시작</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

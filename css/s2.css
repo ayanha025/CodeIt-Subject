@@ -1,0 +1,110 @@
+/* ============================================
+   S2 - Task Detail (업무 상세) + S5 shared
+   ============================================ */
+.detail {
+  padding: 32px 40px;
+  width: 100%;
+}
+
+.detail__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  padding: 8px 0;
+  /* .detail-card(max-width 780px, 가운데 정렬)의 좌측 엣지에 맞춰 정렬 */
+  margin-left: max(0px, calc((100% - 780px) / 2));
+  margin-right: auto;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+.detail__back:hover { color: var(--color-brand-primary); }
+
+.detail-card {
+  background: var(--color-background-primary);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-xl);
+  max-width: 780px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.detail-card__header {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.detail-card__header-text { flex: 1; }
+.detail-card__sender {
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0 0 4px;
+}
+.detail-card__meta {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.detail-card__meta-divider {
+  width: 1px;
+  height: 10px;
+  background: var(--color-border-default);
+}
+
+.detail-card__body {
+  padding: 32px;
+  border-top: 1px solid var(--color-border-subtle);
+}
+.detail-card__text {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-primary);
+  margin: 0 0 24px;
+  white-space: pre-line;
+}
+.detail-card__attach {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border-subtle);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-md);
+}
+
+.detail-card__cta {
+  padding: 24px 32px;
+  background: var(--color-background-primary);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.cta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.cta-bar__info { display: flex; flex-direction: column; gap: 4px; }
+.cta-bar__time {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+.cta-bar__hint {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+}
+.cta-bar__actions { display: flex; gap: 8px; }
